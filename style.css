@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+}
+.container{
+    width:15vw;
+    height: 100vh;
+    background-color:rgb(200, 198, 198);
+}
+#icon i{
+    font-size: 2rem;
+    margin-left:10px;
+    cursor: pointer;
+    margin-top: 5px;
+
+}
+#icon #cross{
+    margin-left:9rem;
+    font-size: 2.4rem;
+}
+#list ul li{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* text-align: center; */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+#list ul li{
+    transition: 1s;
+
+}
+#list ul li:hover{
+    color: white;
+    transition: 1s;
+    background-color: maroon;
+}
+#list {
+  display: none; /* hidden by default */
+  transition: 3s ease;
+}
+
+
+#list.active {
+transition: 5s ease;
+  display: block; /* visible when active */
+}
+#icon #cross {
+    display: block;
+}
+#cross.active #list{
+    display: none;
+}
